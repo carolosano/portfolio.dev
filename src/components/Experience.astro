@@ -1,0 +1,34 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "February 2024 - NOW",
+    title: "Systems Programming",
+    company: "Universidad de Ciencias Empresariales y Sociales (UCES)",
+    description: "Associate's degree",
+    link: "https://www.uces.edu.ar/carreras-universitarias/facultad-ciencias-empresariales/programacion-sistemas",
+  },
+  {
+    date: "June 2022 - July 2023",
+    title: "FullStack Web Developer",
+    company: "Universidad Tecnológica Nacional (UTN)",
+    description: "Technical Diploma",
+  },
+  {
+    date: "August 2019 - NOW",
+    title: "Graphic Design",
+    company: "Universidad de Buenos Aires (UBA)",
+    description: "Bachelor's degree",
+  },  
+]
+---
+
+  <ol class="relative mt-16">
+    {
+      EXPERIENCIE.map((experiencie) => (
+        <li class="">
+          <ExperienceItem {...experiencie} />
+        </li>
+      ))
+    }
+  </ol>
